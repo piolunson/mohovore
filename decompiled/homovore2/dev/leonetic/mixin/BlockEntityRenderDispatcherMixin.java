@@ -1,0 +1,23 @@
+package dev.leonetic.mixin;
+
+import dev.leonetic.Homovore2Client;
+import dev.leonetic.event.impl.render.RenderBlockEntityEvent;
+import net.minecraft.class_11659;
+import net.minecraft.class_11954;
+import net.minecraft.class_12075;
+import net.minecraft.class_4587;
+import net.minecraft.class_824;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
+
+@Mixin(class_824.class)
+public class BlockEntityRenderDispatcherMixin {
+   @Inject(method = "method_3555", at = @At("HEAD"), cancellable = true)
+   private void homovore$blockEntity(class_11954 state, class_4587 poseStack, class_11659 collector, class_12075 camera, CallbackInfo ci) {
+      if (Homovore2Client.EVENT_BUS.post(new RenderBlockEntityEvent(state.field_62675))) {
+         ci.cancel();
+      }
+   }
+}
