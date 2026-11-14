@@ -72,7 +72,7 @@ public abstract class HudMixin {
       homovore$cancelIfSuppressed(RenderFeatureEvent.Feature.HELD_ITEM_NAME, ci);
    }
 
-   @Inject(method = "renderScoreboardSidebar", at = @At("HEAD"), cancellable = true)
+   @Inject(method = "renderScoreboardSidebar(Lnet/minecraft/client/gui/DrawContext;Lnet/minecraft/client/render/RenderTickCounter;)V", at = @At("HEAD"), cancellable = true)
    private void homovore$scoreboard(CallbackInfo ci) {
       homovore$cancelIfSuppressed(RenderFeatureEvent.Feature.SCOREBOARD, ci);
    }

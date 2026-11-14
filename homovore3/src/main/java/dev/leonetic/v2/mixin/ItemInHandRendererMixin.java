@@ -41,7 +41,7 @@ public class ItemInHandRendererMixin {
    @Unique
    private boolean homovore$swayFrozen;
 
-   @Inject(method = "renderItem", at = @At("HEAD"))
+   @Inject(method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V", at = @At("HEAD"))
    private void homovore$freezeSway(
       float partialTick, MatrixStack poseStack, OrderedRenderCommandQueue collector, ClientPlayerEntity renderedPlayer, int light, CallbackInfo ci
    ) {
@@ -64,7 +64,7 @@ public class ItemInHandRendererMixin {
       }
    }
 
-   @Inject(method = "renderItem", at = @At("RETURN"))
+   @Inject(method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V", at = @At("RETURN"))
    private void homovore$restoreSway(
       float partialTick, MatrixStack poseStack, OrderedRenderCommandQueue collector, ClientPlayerEntity renderedPlayer, int light, CallbackInfo ci
    ) {

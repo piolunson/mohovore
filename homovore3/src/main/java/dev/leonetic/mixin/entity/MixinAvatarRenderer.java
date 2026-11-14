@@ -10,7 +10,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(PlayerEntityRenderer.class)
 public class MixinAvatarRenderer {
-   @Inject(method = "renderLabelIfPresent", at = @At("HEAD"), cancellable = true)
+   @Inject(method = "renderLabelIfPresent(Lnet/minecraft/client/render/entity/state/PlayerEntityRenderState;Lnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/render/state/CameraRenderState;)V", at = @At("HEAD"), cancellable = true)
    private void cancelVanillaNameTag(CallbackInfo ci) {
       NametagsModule nametags = Homovore.moduleManager.getModuleByClass(NametagsModule.class);
       if (nametags != null && nametags.isEnabled()) {

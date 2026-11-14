@@ -46,7 +46,7 @@ public class MixinItemInHandRenderer {
    private float noSway$savedYBob;
    private float noSway$savedYBobO;
 
-   @Inject(method = "renderItem", at = @At("HEAD"))
+   @Inject(method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V", at = @At("HEAD"))
    private void noSway$pre(CallbackInfo ci) {
       if (ViewModelModule.isActive(m -> m.noSway.getValue())) {
          ClientPlayerEntity player = MinecraftClient.getInstance().player;
@@ -66,7 +66,7 @@ public class MixinItemInHandRenderer {
       }
    }
 
-   @Inject(method = "renderItem", at = @At("RETURN"))
+   @Inject(method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V", at = @At("RETURN"))
    private void noSway$post(CallbackInfo ci) {
       if (ViewModelModule.isActive(m -> m.noSway.getValue())) {
          ClientPlayerEntity player = MinecraftClient.getInstance().player;
@@ -153,7 +153,7 @@ public class MixinItemInHandRenderer {
    }
 
    @ModifyArg(
-      method = "renderItem",
+      method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V",
       at = @At(
          value = "INVOKE",
          target = "Lnet/minecraft/client/render/item/HeldItemRenderer;renderFirstPersonItem(Lnet/minecraft/client/network/AbstractClientPlayerEntity;FFLnet/minecraft/util/Hand;FLnet/minecraft/item/ItemStack;FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;I)V"
@@ -165,7 +165,7 @@ public class MixinItemInHandRenderer {
       return mod != null && mod.isEnabled() ? mod.getDisplayStack(original) : original;
    }
 
-   @ModifyVariable(method = "renderItem", at = @At("HEAD"), argsOnly = true, ordinal = 0)
+   @ModifyVariable(method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V", at = @At("HEAD"), argsOnly = true, ordinal = 0)
    private OrderedRenderCommandQueue handShader$wrapCollector(OrderedRenderCommandQueue original) {
       this.handShader$capturing = false;
       ShadersModule mod = Homovore.moduleManager.getModuleByClass(ShadersModule.class);
@@ -183,7 +183,7 @@ public class MixinItemInHandRenderer {
       }
    }
 
-   @Inject(method = "renderItem", at = @At("TAIL"))
+   @Inject(method = "renderItem(FLnet/minecraft/client/util/math/MatrixStack;Lnet/minecraft/client/render/command/OrderedRenderCommandQueue;Lnet/minecraft/client/network/ClientPlayerEntity;I)V", at = @At("TAIL"))
    private void handShader$flush(
       float partialTick, MatrixStack poseStack, OrderedRenderCommandQueue collector, ClientPlayerEntity player, int light, CallbackInfo ci
    ) {

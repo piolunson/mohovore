@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "homovore-3",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "name": "Homovore 3",
   "description": "Merged feature set of Homovore 1 and Homovore 2, deobfuscated with Yarn mappings for 1.21.11 (duplicates in favour of Homovore 1, PistonCrystal from Homovore 2).",
   "authors": [

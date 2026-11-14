@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(ParticleManager.class)
 public class MixinParticleEngine {
-   @Inject(method = "addParticle", at = @At("HEAD"), cancellable = true)
+   @Inject(method = "addParticle(Lnet/minecraft/particle/ParticleEffect;DDDDDD)Lnet/minecraft/client/particle/Particle;", at = @At("HEAD"), cancellable = true)
    private void homovore$noParticles(
       ParticleEffect particle, double x, double y, double z, double vx, double vy, double vz, CallbackInfoReturnable<Particle> cir
    ) {

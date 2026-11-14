@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 @Mixin(Entity.class)
 public class MixinEntity {
-   @Inject(method = "getRotationVector", at = @At("HEAD"), cancellable = true)
+   @Inject(method = "getRotationVector()Lnet/minecraft/util/math/Vec3d;", at = @At("HEAD"), cancellable = true)
    private void homovore$spoofLookAngle(CallbackInfoReturnable<Vec3d> cir) {
       Entity self = (Entity)(Object)this;
       if (self == MinecraftClient.getInstance().player) {
