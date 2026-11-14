@@ -1,0 +1,721 @@
+{
+  "modules.json": {
+    "AirPlace": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "CustomRange": "true",
+      "Range": "3.5",
+      "Render": "true",
+      "FadeTime": "0.05",
+      "SideColor": "0,0,0,0",
+      "LineColor": "255,255,255,200",
+      "LineWidth": "4.0",
+      "ThroughWalls": "true"
+    },
+    "AnchorPlacer": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "MinDamage": "10.0",
+      "MaxSelfDamage": "3.0",
+      "Delay": "2",
+      "PauseWhileUsing": "true",
+      "Render": "true",
+      "FadeTime": "0.5",
+      "FillColor": "123,0,255,44",
+      "OutlineColor": "123,0,255,255",
+      "LineWidth": "3.0",
+      "ThroughWalls": "true"
+    },
+    "AntiAfk": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Spin": "true"
+    },
+    "AutoEat": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Blacklist": [
+        "minecraft:golden_apple",
+        "minecraft:chorus_fruit",
+        "minecraft:poisonous_potato",
+        "minecraft:pufferfish",
+        "minecraft:chicken",
+        "minecraft:rotten_flesh",
+        "minecraft:spider_eye",
+        "minecraft:suspicious_stew",
+        "minecraft:enchanted_golden_apple"
+      ],
+      "SearchInventory": "false",
+      "FoodPriority": "SATURATION",
+      "ThresholdMode": "HEALTH",
+      "HealthThreshold": "10.0",
+      "HungerThreshold": "7",
+      "PauseBaritone": "false"
+    },
+    "AutoElytra": {
+      "Enabled": "false",
+      "BindMode": "HOLD",
+      "Takeoff": "VELOCITY",
+      "MinBoostTicks": "7",
+      "WallPearl": "true",
+      "WallPearlDelay": "400"
+    },
+    "AutoLog": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Method": "QUIT",
+      "Health": "false",
+      "HealthThreshold": "6.0",
+      "Totems": "false",
+      "TotemThreshold": "1"
+    },
+    "AutoMine": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Range": "7.0",
+      "Priority": "ANGLE",
+      "IgnoreNakeds": "true",
+      "Extend": "CORNER",
+      "UnderMine": "true",
+      "CrawlMine": "false",
+      "AntiSwim": "NONE",
+      "AntiSurround": "OUTER",
+      "OuterCooldown": "0.1",
+      "ComboScoring": "true",
+      "AvoidPistonCrystal": "true",
+      "RebreakDelay": "0",
+      "GlassPush": "false",
+      "GlassAttempts": "2",
+      "GlassRender": "false",
+      "GlassFade": "0.5",
+      "GlassFill": "0,222,255,44",
+      "GlassLine": "255,255,255,0",
+      "DebugScores": "false"
+    },
+    "AutoTotem": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "AutoTrap": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Render": "true",
+      "FadeTime": "0.5",
+      "SideColor": "255,0,0,44",
+      "LineColor": "255,0,0,0",
+      "LineWidth": "1.0",
+      "ThroughWalls": "true"
+    },
+    "AutoXP": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "MinDurability": "60",
+      "StopDurability": "90",
+      "Burst": "3",
+      "Rotate": "true",
+      "PauseWhileUsing": "true"
+    },
+    "BasePlace": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "EnemyRange": "7.0",
+      "MinDamage": "5.0"
+    },
+    "Beacon": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "ClickGui": {
+      "BindMode": "TOGGLE",
+      "Prefix": "@",
+      "Theme": "COLORS",
+      "Custom Color": "93,15,15,255",
+      "Smooth": "true",
+      "Delay": "42",
+      "Brightness": "72.1",
+      "Saturation": "255.0",
+      "ClickGUI Font": "true",
+      "HUD Font": "true",
+      "Font": "Dialog",
+      "Font Size": "9"
+    },
+    "CrystalPlacer": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Place": "true",
+      "Break": "true",
+      "Pistons": "true",
+      "PauseWhileUsing": "true",
+      "Debug": "false",
+      "TargetRange": "18.0",
+      "PistonRange": "6.0",
+      "MinDamage": "6.0",
+      "MaxSelfDamage": "3.0",
+      "DamageSync": "true",
+      "AutoMineTarget": "true",
+      "Pane": "false",
+      "PaneLine": "175,100,255,220",
+      "PaneSide": "175,100,255,60",
+      "PaneWidth": "3.0",
+      "PaneSize": "0.9",
+      "PaneSpeed": "0.06",
+      "PaneLinger": "0.6",
+      "PaneFade": "0.5",
+      "Spinner": "false",
+      "SpinnerLine": "255,255,255,230",
+      "SpinnerSide": "175,100,255,0",
+      "SpinnerWidth": "3.0",
+      "SpinnerSize": "1.5",
+      "SpinnerStep": "20.0",
+      "SpinnerFade": "0.5",
+      "Box": "true",
+      "BoxLine": "123,0,255,255",
+      "BoxSide": "123,0,255,44",
+      "BoxWidth": "3.0",
+      "BoxFade": "2.0",
+      "RenderHeight": "0.02",
+      "ThroughWalls": "true"
+    },
+    "CustomSounds": {
+      "Enabled": "true",
+      "BindMode": "TOGGLE",
+      "ClickGUI Press": "click deleera.wav",
+      "ClickGUI Hover": "scroll.wav"
+    },
+    "DoubleMine": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Threshold": "0.7",
+      "Range": "5.0",
+      "Rebreak": "true",
+      "Render": "true",
+      "Animation": "IN",
+      "SideColor": "58,58,58,0",
+      "LineColor": "255,0,0,255",
+      "LineWidth": "5.0",
+      "ThroughWalls": "true",
+      "OutlineColor": "255,255,255,200"
+    },
+    "ElytraBounce": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "SnapYaw": "true",
+      "FreeLook": "true",
+      "ObstaclePasser": "true",
+      "Debug": "false"
+    },
+    "FallTrap": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Render": "true",
+      "FadeTime": "0.5",
+      "SideColor": "255,0,0,44",
+      "LineColor": "255,255,255,0",
+      "LineWidth": "1.5",
+      "ThroughWalls": "true"
+    },
+    "Fixes": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "GrimAttackVelocity": "true",
+      "SlotDragDesync": "true",
+      "SilentSwapFix": "true",
+      "SetSlotDebug": "false",
+      "CooldownSync": "LATEST"
+    },
+    "HotbarRefill": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Percentage": "20",
+      "Delay": "10",
+      "QuickMove": "false",
+      "InScreens": "true"
+    },
+    "Hud": {
+      "Enabled": "true",
+      "BindMode": "TOGGLE"
+    },
+    "InstantRekit": {
+      "Enabled": "false",
+      "BindMode": "HOLD",
+      "Kit": "l1",
+      "Kit Name": "l1",
+      "TopUpStacks": "true",
+      "CloseOnDone": "true",
+      "Kits": {
+        "l1": [
+          {
+            "item": "minecraft:netherite_sword"
+          },
+          {
+            "item": "minecraft:netherite_pickaxe"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:enchanted_golden_apple"
+          },
+          {
+            "item": "minecraft:experience_bottle"
+          },
+          {
+            "item": "minecraft:ender_chest"
+          },
+          {
+            "item": "minecraft:obsidian"
+          },
+          {
+            "item": "minecraft:end_crystal"
+          },
+          {
+            "item": "minecraft:orange_shulker_box"
+          },
+          {
+            "item": "minecraft:totem_of_undying"
+          },
+          {
+            "item": "minecraft:totem_of_undying"
+          },
+          {
+            "item": "minecraft:totem_of_undying"
+          },
+          {
+            "item": "minecraft:totem_of_undying"
+          },
+          {
+            "item": "minecraft:totem_of_undying"
+          },
+          {
+            "item": "minecraft:elytra"
+          },
+          {
+            "item": "minecraft:end_crystal"
+          },
+          {
+            "item": "minecraft:end_crystal"
+          },
+          {
+            "item": "minecraft:firework_rocket"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:experience_bottle"
+          },
+          {
+            "item": "minecraft:obsidian"
+          },
+          {
+            "item": "minecraft:obsidian"
+          },
+          {
+            "item": "minecraft:end_crystal"
+          },
+          {
+            "item": "minecraft:firework_rocket"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:ender_pearl"
+          },
+          {
+            "item": "minecraft:experience_bottle"
+          },
+          {
+            "item": "minecraft:obsidian"
+          },
+          {
+            "item": "minecraft:obsidian"
+          },
+          {
+            "item": "minecraft:end_crystal"
+          },
+          {
+            "item": "minecraft:firework_rocket"
+          }
+        ]
+      },
+      "ActiveKit": "l1"
+    },
+    "IRC": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Server": "https://154-29-73-215.sslip.io",
+      "Sync Rate": "250",
+      "Chat Prefix": "!",
+      "Join Messages": "true",
+      "Beacons": "true",
+      "Duration": "20",
+      "Beacon Color": "224,36,94,255",
+      "Beam": "true",
+      "Tracers": "false",
+      "Alerts": "true",
+      "Logout Spots": "true",
+      "Spot Model": "true",
+      "Spot Box": "true",
+      "Spot Items": "true",
+      "Spot Line": "0,200,255,255",
+      "Spot Side": "0,200,255,45",
+      "Badges": "true",
+      "Totem Color": "230,150,25,255"
+    },
+    "IRCInfo": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "KeyAction": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "KillAura": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Delay": "0.92",
+      "Sprinting": "NONE",
+      "Rotate": "SILENT",
+      "Players": "true",
+      "Hostiles": "true",
+      "Neutrals": "false",
+      "Passives": "false",
+      "Projectiles": "true",
+      "Priority": "SMART",
+      "Render": "false",
+      "Color": "255,0,0,200",
+      "Pulse": "true",
+      "PulseTime": "0.25",
+      "PulseStrength": "1.0"
+    },
+    "LimitsOverlay": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "X": "2",
+      "Y": "16",
+      "Buckets": "false",
+      "Manager": "true",
+      "Results": "false",
+      "Timeline": "true",
+      "Ticks": "60"
+    },
+    "LogBreaking": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "LogChat": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "ActionBar": "false",
+      "Players": "false"
+    },
+    "LogCombat": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Swings": "false",
+      "Health": "true",
+      "Pops": "true"
+    },
+    "LogInventory": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Server": "true",
+      "Contents": "false"
+    },
+    "LogLimits": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Interval": "5",
+      "Deferrals": "true"
+    },
+    "LogMarker": {
+      "BindMode": "TOGGLE"
+    },
+    "LogPackets": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Outbound": "true",
+      "Inbound": "false",
+      "Fields": "false",
+      "Only": "",
+      "Exclude": "KeepAlive,MoveEntity,EntityPositionSync,SetEntityMotion,RotateHead,SetTime,LevelChunk,LightUpdate,ChunkBatch,ForgetLevelChunk,SetEntityData,Sound,LevelParticles,UpdateAttributes,TeleportEntity,SetChunkCacheCenter,BundleDelimiter,Ping,Pong,PlayerInfoUpdate,SetEquipment,AddEntity,RemoveEntities,Animate"
+    },
+    "LogPing": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Interval": "5",
+      "Samples": "false"
+    },
+    "LogPlacements": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Results": "true",
+      "OnlyFailures": "false",
+      "Held": "true",
+      "Uses": "true"
+    },
+    "LogRotations": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "EveryTick": "true",
+      "OnlyChanges": "true",
+      "Packets": "false",
+      "Position": "false",
+      "WarnMulti": "true"
+    },
+    "LogServer": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Health": "true",
+      "Interval": "10"
+    },
+    "LogSession": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "MarkText": "",
+      "X": "2",
+      "Y": "2"
+    },
+    "LogSetbacks": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "LogToggles": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Settings": "true"
+    },
+    "MiddleClick": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "FireworkInAir": "false"
+    },
+    "No Velocity": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Mode": "NORMAL",
+      "PhaseOnly": "true",
+      "Knockback": "true",
+      "Explosions": "false",
+      "EntityPush": "true",
+      "BlockPush": "true"
+    },
+    "NoClimb": {
+      "Enabled": "true",
+      "BindMode": "TOGGLE"
+    },
+    "NoJumpDelay": {
+      "Enabled": "true",
+      "BindMode": "TOGGLE"
+    },
+    "NoRotate": {
+      "Enabled": "true",
+      "BindMode": "TOGGLE"
+    },
+    "Notifications": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Module Toggles": "CHAT",
+      "Visual Range": "BOTH",
+      "Ignore Friends": "true",
+      "Geared Only": "true",
+      "Totem Pops": "BOTH",
+      "Duration": "3"
+    },
+    "PacketLimits": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Limit": "true",
+      "GlobalWindow": "3951",
+      "GlobalLimit": "1249",
+      "GrimTickGate": "true",
+      "UseItemWindow": "300",
+      "UseItemLimit": "9",
+      "RecipeWindow": "4200",
+      "RecipeLimit": "19",
+      "ClickSlotWindow": "4200",
+      "ClickSlotLimit": "79",
+      "OffhandWindow": "500",
+      "OffhandLimit": "151",
+      "TpsSync": "false",
+      "TpsThreshold": "18.0",
+      "MaxStretch": "2.0"
+    },
+    "PearlBlocker": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Crystal": "true",
+      "MaxSelfDamage": "3.0",
+      "Render": "true",
+      "FadeTime": "0.5",
+      "SideColor": "255,0,0,44",
+      "LineColor": "255,255,255,0",
+      "LineWidth": "1.5",
+      "ThroughWalls": "true"
+    },
+    "Phase": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "PistonCrystal": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "MinDamage": "10.0",
+      "MaxSelfDamage": "5.0",
+      "Delay": "0",
+      "AutoBase": "true",
+      "Break": "true",
+      "PauseWhileUsing": "true",
+      "Render": "true",
+      "FadeTime": "0.2",
+      "FillColor": "0,62,122,148",
+      "OutlineColor": "0,120,255,220",
+      "LineWidth": "1.0",
+      "ThroughWalls": "true"
+    },
+    "PlacementViz": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Sent": "255,200,40,90",
+      "Confirmed": "60,220,90,70",
+      "Rejected": "240,60,60,90",
+      "Lost": "150,150,150,90",
+      "OverLimit": "220,60,240,110",
+      "ShowConfirmed": "true",
+      "Uses": "true",
+      "Fade": "1.5",
+      "Labels": "true",
+      "ThroughWalls": "true",
+      "LineWidth": "1.5"
+    },
+    "RegearBlocker": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "EnderChests": "true",
+      "Shulkers": "true",
+      "Render": "true",
+      "FadeTime": "0.5",
+      "SideColor": "255,0,0,44",
+      "LineColor": "255,255,255,0",
+      "LineWidth": "1.0",
+      "ThroughWalls": "true"
+    },
+    "Scaffold": {
+      "Enabled": "false",
+      "BindMode": "HOLD",
+      "Radius": "1.0",
+      "Depth": "1",
+      "Lookahead": "1.0",
+      "Render": "true",
+      "FadeTime": "0.5",
+      "SideColor": "11,0,255,44",
+      "LineColor": "255,255,255,0",
+      "LineWidth": "1.5",
+      "ThroughWalls": "false"
+    },
+    "SelfTrap": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Attack": "true",
+      "Reactive": "true",
+      "MineProtect": "true",
+      "Fireworks": "true",
+      "CrystalProtect": "true",
+      "AvoidHelpingOpponents": "true",
+      "PauseOnEat": "true",
+      "SelfTrap": "true",
+      "SelfTrapMode": "SMART",
+      "SelfTrapHead": "true",
+      "AntiPiston": "false",
+      "CrawlTrap": "false",
+      "Extend": "true",
+      "ExtendMode": "SMART",
+      "Render": "true",
+      "FadeTime": "0.2",
+      "SideColor": "255,255,255,44",
+      "LineColor": "255,255,255,0",
+      "LineWidth": "1.0",
+      "ThroughWalls": "true"
+    },
+    "Server": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE",
+      "Host": "2b2t.org",
+      "AddressFamily": "AUTO",
+      "Samples": "3",
+      "Timeout": "800",
+      "JitterWeight": "1.5",
+      "SwitchThreshold": "15",
+      "CacheMinutes": "15"
+    },
+    "SoundBlocker": {
+      "Enabled": "true",
+      "BindMode": "TOGGLE",
+      "Sounds": [
+        "minecraft:item.elytra.flying"
+      ]
+    },
+    "Sprint": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "SwordGap": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    },
+    "SyncedLogoutSpots": {
+      "Enabled": "false",
+      "BindMode": "TOGGLE"
+    }
+  },
+  "clickgui.json": {
+    "COMBAT": {
+      "Position": "6,6",
+      "Open": true
+    },
+    "SAFETY": {
+      "Position": "121,6",
+      "Open": true
+    },
+    "MOVEMENT": {
+      "Position": "236,6",
+      "Open": true
+    },
+    "RENDER": {
+      "Position": "351,6",
+      "Open": true
+    },
+    "EXTRA": {
+      "Position": "466,6",
+      "Open": true
+    },
+    "CLIENT": {
+      "Position": "581,6",
+      "Open": true
+    },
+    "PLUGIN_HOMOVOREHARM": {
+      "Position": "593,229",
+      "Open": true
+    },
+    "PLUGIN_LOGUTILS": {
+      "Position": "479,229",
+      "Open": true
+    }
+  }
+}

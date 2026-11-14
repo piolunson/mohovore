@@ -1,0 +1,13 @@
+accessWidener	v2	intermediary
+accessible	class	net/minecraft/class_12247$class_12338
+accessible	field	net/minecraft/class_1921	field_64013	Lnet/minecraft/class_12247;
+accessible	method	net/minecraft/class_1921	method_75940	(Ljava/lang/String;Lnet/minecraft/class_12247;)Lnet/minecraft/class_1921;
+accessible	field	net/minecraft/class_12247	field_63987	Ljava/util/Map;
+accessible	field	net/minecraft/class_12247	field_63988	Lnet/minecraft/class_12250;
+accessible	field	net/minecraft/class_12247	field_63989	Lnet/minecraft/class_12246;
+accessible	field	net/minecraft/class_12247	field_63990	Lnet/minecraft/class_12247$class_4750;
+accessible	field	net/minecraft/class_12247	field_63996	Lnet/minecraft/class_12245;
+accessible	field	net/minecraft/class_12247	field_63991	Z
+accessible	field	net/minecraft/class_12247	field_63992	Z
+accessible	field	net/minecraft/class_12247	field_63993	Z
+accessible	field	net/minecraft/class_12247	field_63994	Z

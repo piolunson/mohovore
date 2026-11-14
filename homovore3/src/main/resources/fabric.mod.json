@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "id": "homovore-3",
+  "version": "1.0.0",
+  "name": "Homovore 3",
+  "description": "Merged feature set of Homovore 1 and Homovore 2, deobfuscated with Yarn mappings for 1.21.11 (duplicates in favour of Homovore 1, PistonCrystal from Homovore 2).",
+  "authors": [
+    "Leonetic",
+    "widerthaneurasia"
+  ],
+  "contact": {},
+  "license": "AGPL-3.0-or-later",
+  "icon": "assets/homovore/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "dev.leonetic.Homovore",
+      "dev.leonetic.v2.Homovore2"
+    ],
+    "client": [
+      "dev.leonetic.Homovore",
+      "dev.leonetic.v2.Homovore2Client"
+    ]
+  },
+  "mixins": [
+    "homovore.mixins.json",
+    "homovore-3.mixins.json"
+  ],
+  "accessWidener": "homovore-3.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/catformat-core-2.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/catformat-fabric-2.1.0.jar"
+    },
+    {
+      "file": "META-INF/jars/discord-ipc-1.1.jar"
+    },
+    {
+      "file": "META-INF/jars/jlayer-1.0.1.jar"
+    }
+  ]
+}

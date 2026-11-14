@@ -1,0 +1,38 @@
+plugins {
+    id 'fabric-loom' version '1.19.4'
+    id 'java'
+}
+
+version = '1.0.0'
+group = 'dev.leonetic'
+
+base { archivesName = 'homovore-3' }
+
+repositories {
+    mavenCentral()
+    maven { url = 'https://maven.fabricmc.net/' }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:1.21.11"
+    mappings "net.fabricmc:yarn:1.21.11+build.6:v2"
+    modImplementation "net.fabricmc:fabric-loader:0.20.1"
+    modImplementation "net.fabricmc.fabric-api:fabric-api:0.141.6+1.21.11"
+    implementation files('src/main/resources/META-INF/jars/jlayer-1.0.1.jar')
+    implementation files('src/main/resources/META-INF/jars/discord-ipc-1.1.jar')
+    implementation files('src/main/resources/META-INF/jars/catformat-core-2.1.0.jar')
+    implementation files('src/main/resources/META-INF/jars/catformat-fabric-2.1.0.jar')
+}
+
+loom {
+    accessWidenerPath = file('src/main/resources/homovore-3.accesswidener')
+}
+
+java {
+    toolchain { languageVersion = JavaLanguageVersion.of(21) }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}

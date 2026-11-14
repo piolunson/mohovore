@@ -1,0 +1,23 @@
+accessWidener	v2	named
+accessible	field	net/minecraft/client/MinecraftClient	itemUseCooldown	I
+accessible	field	net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket	entityId	I
+accessible	method	net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractTypeHandler	getType	()Lnet/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractType;
+accessible	class	net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractType
+accessible	field	net/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket	type	Lnet/minecraft/network/packet/c2s/play/PlayerInteractEntityC2SPacket$InteractTypeHandler;
+accessible	method	net/minecraft/client/network/ClientPlayerInteractionManager	syncSelectedSlot	()V
+accessible	field	net/minecraft/client/input/Input	movementVector	Lnet/minecraft/util/math/Vec2f;
+accessible	class	net/minecraft/client/render/RenderSetup$TextureSpec
+accessible	field	com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription	name	Ljava/lang/String;
+accessible	field	com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription	type	Lnet/minecraft/client/gl/UniformType;
+accessible	field	com/mojang/blaze3d/pipeline/RenderPipeline$UniformDescription	textureFormat	Lcom/mojang/blaze3d/textures/TextureFormat;
+accessible	field	net/minecraft/client/render/RenderLayer	renderSetup	Lnet/minecraft/client/render/RenderSetup;
+accessible	method	net/minecraft/client/render/RenderLayer	of	(Ljava/lang/String;Lnet/minecraft/client/render/RenderSetup;)Lnet/minecraft/client/render/RenderLayer;
+accessible	field	net/minecraft/client/render/RenderSetup	textures	Ljava/util/Map;
+accessible	field	net/minecraft/client/render/RenderSetup	textureTransform	Lnet/minecraft/client/render/TextureTransform;
+accessible	field	net/minecraft/client/render/RenderSetup	outputTarget	Lnet/minecraft/client/render/OutputTarget;
+accessible	field	net/minecraft/client/render/RenderSetup	outlineMode	Lnet/minecraft/client/render/RenderSetup$OutlineMode;
+accessible	field	net/minecraft/client/render/RenderSetup	layeringTransform	Lnet/minecraft/client/render/LayeringTransform;
+accessible	field	net/minecraft/client/render/RenderSetup	useLightmap	Z
+accessible	field	net/minecraft/client/render/RenderSetup	useOverlay	Z
+accessible	field	net/minecraft/client/render/RenderSetup	hasCrumbling	Z
+accessible	field	net/minecraft/client/render/RenderSetup	translucent	Z
