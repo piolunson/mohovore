@@ -11,8 +11,8 @@ build called **Homovore 3**.
 
 | Artifact | Where |
 | --- | --- |
-| Homovore 3 build | [release v1.0.1](https://github.com/piolunson/mohovore/releases/tag/v1.0.1), also `homovore3/dist/homovore-3-1.0.1.jar` |
-| SHA-256 | `631e737d64bbba1fafed5a9084bef560551b7da33484678e20c1a421ad78693a` |
+| Homovore 3 build | [release v1.0.2](https://github.com/piolunson/mohovore/releases/tag/v1.0.2), also `homovore3/dist/homovore-3-1.0.2.jar` |
+| SHA-256 | `6dfa171a338c0791895a6a81323a63f66e26810f3835dcccf8ad6032d1f496e5` |
 
 Drop the jar into `.minecraft/mods` together with Fabric Loader 0.20.1 and Fabric API
 0.141.6+1.21.11. The jar compiles cleanly; it has not been play-tested beyond reaching client
@@ -85,7 +85,7 @@ decompilation: `(X)(Object)this` casts and `(Object)this ==` comparisons in mixi
 
 Mixin annotations needed a second pass as well. The remap step rewrote method names in
 `@Inject`/`@At` strings but dropped their descriptors, which makes Mixin pick an arbitrary
-overload when the target method is overloaded. v1.0.1 restores explicit descriptors for every
+overload when the target method is overloaded. v1.0.2 restores explicit descriptors for every
 ambiguous target (`HeldItemRenderer.renderItem`, `PlayerEntityRenderer.renderLabelIfPresent`,
 `Entity.getRotationVector`, `ParticleManager.addParticle`, `InGameHud.renderScoreboardSidebar`).
 

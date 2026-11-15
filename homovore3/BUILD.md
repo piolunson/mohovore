@@ -9,7 +9,7 @@ JAVA_HOME=/path/to/jdk-25 gradle build
 
 Loom 1.19.4 needs a JVM 25 to run Gradle; the sources compile with `--release 21`.
 
-Result of the last run: **BUILD SUCCESSFUL**, artifact at `homovore3/dist/homovore-3-1.0.1.jar`.
+Result of the last run: **BUILD SUCCESSFUL**, artifact at `homovore3/dist/homovore-3-1.0.2.jar`.
 
 Notes:
 
